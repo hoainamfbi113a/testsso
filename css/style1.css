@@ -331,6 +331,11 @@ color: #9999A4;
     height: 36px;
 }
 
+.my-box-user {
+    border-top:1px solid #eee;
+    border-bottom: none !important;
+    padding-right:0px !important;
+}
 .btn-style {
     height: 42px;
     outline: none;
