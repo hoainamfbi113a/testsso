@@ -13,6 +13,7 @@
   <body>
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="js/jquery.js" type="text/javascript"></script>
     <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
@@ -36,44 +37,26 @@
                     <div class="row justify-content-md-center">
                       <div class="col-md-5 col-lg-5 col-sm-12 shadow h-100 p-6 content-box1">
                         <div class="mt-2 text-center">
-                            <h3 class="my-title1">XÁC THỰC EMAIL</h3>
+                            <h3 class="my-title">CHÀO MỪNG BẠN QUAY TRỞ LẠI !</h3>
                         </div>
                         <div class="mt-4 text-center">
                             <p class="text-link2">
-                                Vui lòng kiểm tra email <span>vinhnguyen0201@gmail.com</span> để xác thực địa chỉ email trên là của bạn là chính xác 
-                            </p>
-                        </div>
-                        <div class="mt-4 text-center">
-                            <p class="text-link2 my-font-c1">
-                                <em>Bạn đừng quên kiểm tra hộp thư rác !</em>
-                            </p>
-                        </div>
-                        <div class="mt-2 text-center">
-                            <p class="text-link2">
-                                Hoặc bạn có thể xác thực trong trang thông tin tài khoản sau.
-                            </p>
-                        </div>
-                        <div class="mt-2 text-center">
-                            <p class="text-center text-danger txt-error-register">
-                                Email xác thực đã được gửi lại, bạn vui lòng kiểm tra email.
+                                Nhập mật khẩu mới cho tài khoản của bạn
                             </p>
                         </div>
                         
-
-                        <div class="row">
-                            <div class="col">
-                                <div class="d-grid  gap-2 pt-1">
-                                    <button type="button" class="btn btn-style my-text-btn my-3 fw-bolder">Tuổi trẻ online</button>
-                                </div>
+                        <form class="frm-general frm-login needs-validation" id="form-forget" action="#" method="post" data-url-login-by-password="https://sso.tuoitre.vn/login">
+                           
+                            <label class="w-100 pt-4">
+                              <input id="password-field" type="password" class="form-control mb-2" placeholder="Nhập mật khẩu mới" name="password">
+                              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                <p class="text-danger txt-error-login text-center mb-0 d-none" style="font-size:13px">(Thông báo kèm theo về sai mã xác minh, mật khẩu không hợp lệ ...)</p>
+                            </label>
+                            <div class="d-grid gap-2 pt-3">
+                                <button type="button" class="btn btn-style my-3 fw-bolder">Xác nhận</button>
                             </div>
-                            <div class="col">
-                                <div class="d-grid gap-2 pt-1">
-                                    <button type="button" class="btn btn-style-r my-text-btn my-3 fw-bolder">Thông tin tài khoản</button>
-                                </div>
-                            </div>
-                        </div>
-                        
-                       
+                            
+                        </form>
                         
                       </div>
 
@@ -83,6 +66,16 @@
             </div>
           </div>
     </div>
-    
+    <script>
+      $(".toggle-password").click(function() {
+          $(this).toggleClass("fa-eye fa-eye-slash");
+          var input = $($(this).attr("toggle"));
+          if (input.attr("type") == "password") {
+            document.getElementById('password-field').setAttribute('type', 'text');
+          } else {
+            document.getElementById('password-field').setAttribute('type', 'password');
+          }
+      });
+  </script>
   </body>
 </html>

@@ -1,4 +1,6 @@
 /*b-header*/
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+@import url('../fafont/css/font-awesome.min.css');
 
 @font-face {
     font-family: 'Mulish';
@@ -47,6 +49,39 @@ body {
     display: flex;
     flex-wrap: wrap;
     background: #fafafa;
+}
+
+.my-modal {
+    z-index: 999999 !important;
+    top:3.5em  !important;
+}
+
+.my-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    color : #464E5F;
+}
+
+.field-icon {
+    float: right;
+    margin-right: 10px;
+    margin-top: -37px;
+    cursor:pointer;
+    opacity: 0.5;
+    position: relative;
+    z-index: 2;
+  }
+
+.my-title2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #3F4254;
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
@@ -184,11 +219,11 @@ body {
     font-size:13px;
 }
 
-.my-title1{
+/* .my-title1{
     font-size: 18px;
     line-height: 22px;
     font-weight: 800;
-}
+} */
 
 .p-6 {
     padding: 2rem 3rem 3rem 3rem;
@@ -227,13 +262,14 @@ a#my-togger:hover {
 .frm-general .form-control,
 .frm-general .form-select {
     background-color: #EAEEF2;
-    border-color: #dfdfdf;
+    border: 0 !important;
     color: #000;
     height: 42px;
     outline: none;
     box-shadow: none;
     padding-left: 15px;
     padding-right: 15px;
+    
 }
 
 .text-link1 {
@@ -354,14 +390,22 @@ color: #9999A4;
 
 .btn-style:hover {
     color: #fff;
-    background: #2f5aa9;
+    background: #0F75BC;
+}
+.btn-style-r-modal {
+    width: auto !important;
+}
+
+.form-check-input {
+    background-color: #ECF0F3 !important;
+    border:0 !important;
 }
 
 .btn-style-r {
     height: 42px;
     outline: none;
     box-shadow: none;
-    background: #2f5aa9;
+    background: #0F75BC;
     color: #fff;
     width: 100%;
     min-width: 155px;
@@ -379,7 +423,16 @@ color: #9999A4;
 }
 
 .my-font-c1{
-    color:#464E5F;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 27px;
+    color: #464E5F;
+}
+
+.my-font-c1 span{
+    color: #7E8299 !important;
 }
 
 .my-fontsize-m{

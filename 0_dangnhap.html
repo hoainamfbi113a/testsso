@@ -13,6 +13,7 @@
   <body>
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="js/jquery.js"></script>
     <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
@@ -37,10 +38,10 @@
                       <div class="col-md-5 col-lg-5 col-sm-12 shadow h-100 p-6 content-box1">
                         <ul class="nav nav-tabs row my-nav-row" id="myTab" role="tablist">
                           <li class="nav-item col my-nav-item" role="presentation">
-                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">đăng nhập</button>
+                            <button class="nav-link active my-title" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">đăng nhập</button>
                           </li>
                           <li class="nav-item col my-nav-item" role="presentation">
-                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">tạo tài khoản</button>
+                            <button class="nav-link my-title" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">tạo tài khoản</button>
                           </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
@@ -51,7 +52,8 @@
                                       <p class="text-danger txt-error-login mb-0">Email hoặc số điện thoại không hợp lệ.</p>
                                   </label>
                                   <label class="w-100 pt-3">
-                                      <input type="password" class="form-control mb-2" placeholder="Nhập mật khẩu" name="password">
+                                      <input id="password-field-login" type="password" class="form-control mb-2" placeholder="Nhập mật khẩu" name="password">
+                                      <span toggle="#password-field-login" class="fa fa-fw fa-eye field-icon toggle-password-login"></span>
                                       <p class="text-danger txt-error-login mb-0">Mật khẩu ít nhất 6 ký tự nhỏ hơn 15 ký tự.</p>
                                   </label>
                                   <p class="text-center text-danger txt-error-register d-none">
@@ -92,7 +94,8 @@
                                       <p class="text-danger txt-error-login mb-0">Email hoặc số điện thoại không hợp lệ</p>
                                   </label>
                                   <label class="w-100 pt-3">
-                                      <input type="password" class="form-control mb-2" placeholder="Nhập mật khẩu" name="password" value="">
+                                    <input id="password-field-register" type="password" class="form-control mb-2" placeholder="Nhập mật khẩu" name="password">
+                                    <span toggle="#password-field-register" class="fa fa-fw fa-eye field-icon toggle-password-register"></span>
                                       <p class="text-danger txt-error-login mb-0">Sai mật khẩu. Cài lại mật khẩu.</p>
                                   </label>
                                   <p class="text-danger my-3 txt-error-login d-none">Đã xảy ra lỗi</p>
@@ -130,5 +133,25 @@
           </div>
     </div>
     
+    <script>
+      $(".toggle-password-login").click(function() {
+          $(this).toggleClass("fa-eye fa-eye-slash");
+          var input = $($(this).attr("toggle"));
+          if (input.attr("type") == "password") {
+            document.getElementById('password-field-login').setAttribute('type', 'text');
+          } else {
+            document.getElementById('password-field-login').setAttribute('type', 'password');
+          }
+      });
+      $(".toggle-password-register").click(function() {
+          $(this).toggleClass("fa-eye fa-eye-slash");
+          var input = $($(this).attr("toggle"));
+          if (input.attr("type") == "password") {
+            document.getElementById('password-field-register').setAttribute('type', 'text');
+          } else {
+            document.getElementById('password-field-register').setAttribute('type', 'password');
+          }
+      });
+  </script>
   </body>
 </html>
