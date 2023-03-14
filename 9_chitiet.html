@@ -21,41 +21,33 @@
 </head>
 
 <body>
-    <header class="header shadow-sm">
-        <div class="container-fluid d-flex">
-            <a class="logo" href="#" title=""><img src="img/logo.svg" title="" /></a>
-            
-            <div class="navbar ">
-                <div class="container">
-                    <a href="javascript:;" id="my-togger"  class="navbar-toggler my-img-togger" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarL" aria-controls="sidebarL" aria-expanded="false" aria-label="Toggle navigation">
-                        <img style="margin-left:130px;"  src="img/btn-menu.png"> 
+    <nav class="navbar header  navbar-expand shadow-sm" aria-label="First navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="#">
+                <img src="img/logo.svg" style="width:134px;height:40px;" > 
+            </a>
+            <div class="collapse navbar-collapse" id="navbarsExample02">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a id="my-togger" href="#" style="margin-left :140px;" class="my-img-togger">
+                        <img src="img/btn-menu.png">
                     </a>
-                </div>
-            </div>
+                  </li>
+                </ul>
+                <form>
+                  <img class="my-search-header" style="margin-right:20px;" src="img/search.png">
+                </form>
+              </div>
+            
+            
 
             <div class="outer-right">
-                <!-- <div class="dropdown-user">
-                    <a class="dropdown-toggle-user" href="login-phone.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-                            class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                            <path fill-rule="evenodd"
-                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                        </svg>
-                    </a>
-                </div> -->
                 <div class="btn-menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                        class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                    </svg>
+                    <img src="img/btn-menu.png">
                 </div>
             </div>
-            
         </div>
-
-    </header>
+    </nav>
     <section class="section mt-1">
         <div class="container-fluid wrapper">
                     <aside class="sidebar" >
@@ -180,18 +172,20 @@
                   </div>
                 </div> -->
                             <div class="row mb-3 align-items-center form-update">
-                                <div class="col-2 text-first">
-                                    <label class="col-form-label">Họ và tên:</label>
+                                <div class="col-lg-2 col-md-12 col-sm-12 col-12 text-first">
+                                    <label class="col-form-label my-font-color">Họ và tên:</label>
                                 </div>
-                                <div class="col-7 py-1">
+                                <div class="col-lg-7 col-md-9 col-sm-9 col-9 py-1 pe-0">
                                     <div class="input-group row" id="my-name-text">
-
-                                        <p class="mb-0 col-12"><span><b style="font-weight:600;">Nguyễn Lan Ngọc</b></span> <i class="my-font-detail">(Tên hiển thị khi tham gia bình luận)</i></p>
+                                        <p class="mb-0 col-12 my-widget-name">
+                                            <div class="row">
+                                                <p style="font-weight:600;" class="col-12 col-lg-4 col-md-4 col-sm-4 mb-0 ps-0">Nguyễn Lan Ngọc</p>
+                                                <p class="my-font-detail col-12 col-lg-8 col-md-8 col-sm-8 mb-0 my-p-name ps-0" >(Tên hiển thị khi tham gia bình luận)</p>
+                                            </div> 
                                         <p class="col-12 text-danger txt-error-login mb-0 my-fontsize-m">(Họ và tên của bạn đã được gửi và đang chờ báo Tuổi Trẻ duyệt)</p>
                                     </div>
-                                    
                                 </div>
-                                <div class="col-3 py-1 text-center">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-center py-1 ps-0 pe-0">
                                     <button type="button"
                                         class="btn btn-outline-primary btn-md fw-normal my-detail-btn-font"
                                         id="btn-open-update-name1" data-bs-toggle="modal" data-bs-target="#formName">Cập nhật
@@ -199,16 +193,19 @@
                                 </div>
                             </div>
                             <div class="row mb-3 align-items-center form-update">
-                                <div class="col-2 text-first">
-                                    <label class="col-form-label">Email:</label>
+                                <div class="col-lg-2 col-md-12 col-sm-12 col-12 text-first">
+                                    <label class="col-form-label my-font-color">Email:</label>
                                 </div>
-                                <div class="col-7 py-1">
-                                    <div class="input-group row" id="my-email-text">
-                                        <p class="mb-0 col-12"><span><b style="font-weight:600;">nguyenvana@gmail.com</b></span></p>
-                                        <p class="text-danger col-12 txt-error-login mb-0 my-fontsize-m">(Thông tin xác thực đã được gửi qua email của bạn, vui lòng kiểm tra email)</p>
+                                <div class="col-lg-7 col-md-9 col-sm-9 col-9 py-1 pe-0">
+                                    <div class="input-group row" id="my-name-text">
+                                        <p class="mb-0 col-12 my-widget-name">
+                                            <div class="row">
+                                                <p style="font-weight:600;" class="col-12 col-lg-12 col-md-12 col-sm-12 mb-0 ps-0">nguyenvana@gmail.com</p>
+                                            </div> 
+                                        <p class="col-12 text-danger txt-error-login mb-0 my-fontsize-m">(Thông tin xác thực đã được gửi qua email của bạn, vui lòng kiểm tra email)</p>
                                     </div>
                                 </div>
-                                <div class="col-3 py-1 text-center">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-center py-1 ps-0 pe-0">
                                     <button type="button"
                                         class="btn btn-outline-primary btn-md fw-normal my-detail-btn-font"
                                         id="btn-open-update-email1" data-bs-toggle="modal" data-bs-target="#formEmail">Cập nhật
@@ -216,15 +213,15 @@
                                 </div>
                             </div>
                             <div class="row mb-3 align-items-center form-update">
-                                <div class="col-2 text-first">
-                                    <label class="col-form-label">Điện thoại :</label>
+                                <div class="col-lg-2 col-md-12 col-sm-12 col-12 text-first">
+                                    <label class="col-form-label my-font-color">Điện thoại :</label>
                                 </div>
-                                <div class="col-7 py-1">
+                                <div class="col-lg-7 col-md-9 col-sm-9 col-9 py-1 pe-0">
                                     <div class="input-group" id="my-phone-text">
-                                        <p class="mb-0"><span><b style="font-weight:600;">09343434343</b></span></p>
+                                        <p class="mb-0"><span><b style="font-weight:600;">0934341343</b></span></p>
                                     </div>
                                 </div>
-                                <div class="col-3 py-1 text-center">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-center py-1 ps-0 pe-0">
                                     <button type="button"
                                         class="btn btn-outline-primary btn-md fw-normal my-detail-btn-font"
                                         id="btn-open-update-phone1" data-bs-toggle="modal" data-bs-target="#formPhone">Cập nhật
@@ -233,15 +230,15 @@
                                 
                             </div>
                             <div class="row mb-3 align-items-center form-update">
-                                <div class="col-2 text-first">
-                                    <label class="col-form-label">Mật khẩu :</label>
+                                <div class="col-lg-2 col-md-12 col-sm-12 col-12 text-first">
+                                    <label class="col-form-label my-font-color">Mật khẩu :</label>
                                 </div>
-                                <div class="col-7 py-1">
+                                <div class="col-lg-7 col-md-9 col-sm-9 col-9 py-1 pe-0">
                                     <div class="input-group" id="my-pass-text">
                                         <p class="mb-0"><span><b style="font-weight:600;">**********</b></span></p>
                                     </div>
                                 </div>
-                                <div class="col-3 py-1 text-center">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-center py-1 ps-0 pe-0">
                                     <button type="button"
                                         class="btn btn-outline-primary btn-md fw-normal my-detail-btn-font"
                                         id="btn-open-update-pass1" data-bs-toggle="modal" data-bs-target="#formPass">Cập nhật
@@ -249,10 +246,10 @@
                                 </div>
                             </div>
                             <div class="row mb-3 align-items-center form-update">
-                                <div class="col-2 text-first">
-                                    <label class="col-form-label">Giới tính :</label>
+                                <div class="col-lg-2 col-md-12 col-sm-12 col-12 text-first">
+                                    <label class="col-form-label my-font-color">Giới tính :</label>
                                 </div>
-                                <div class="col-7 py-1">
+                                <div class="col-lg-7 col-md-9 col-sm-9 col-9 py-1 pe-0">
                                     <div class="input-group" id="my-sex-text">
                                         <p class="mb-0"><span><b style="font-weight:600;">Nam</b></span></p>
                                     </div>
@@ -260,7 +257,7 @@
                                         <input type="text" id="my-sex-input" class="d-none form-control" value="Nam">
                                     </div>
                                 </div>
-                                <div class="col-3 py-1 text-center">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-center py-1 ps-0 pe-0">
                                     <button type="button"
                                         class="btn btn-outline-primary btn-md fw-normal my-detail-btn-font"
                                         id="btn-open-update-sex1" data-bs-toggle="modal" data-bs-target="#formSex">Cập nhật
@@ -268,15 +265,15 @@
                                 </div>
                             </div>
                             <div class="row mb-3 align-items-center form-update">
-                                <div class="col-2 text-first">
-                                    <label class="col-form-label">Ngày sinh :</label>
+                                <div class="col-lg-2 col-md-12 col-sm-12 col-12 text-first">
+                                    <label class="col-form-label my-font-color">Ngày sinh :</label>
                                 </div>
-                                <div class="col-7 py-1">
+                                <div class="col-lg-7 col-md-9 col-sm-9 col-9 py-1 pe-0">
                                     <div class="input-group" id="my-date-text">
                                         <p class="mb-0"><span><b style="font-weight:600;">03/03/2023</b></span></p>
                                     </div>
                                 </div>
-                                <div class="col-3 py-1 text-center">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-center py-1 ps-0 pe-0">
                                     <button type="button"
                                         class="btn btn-outline-primary btn-md fw-normal my-detail-btn-font"
                                         id="btn-open-update-date1" data-bs-toggle="modal" data-bs-target="#formDate">Cập nhật
@@ -284,16 +281,16 @@
                                 </div>
                             </div>
                             <div class="row mb-3 align-items-center form-update">
-                                <div class="col-2 text-first">
-                                    <label class="col-form-label">Địa điểm :</label>
+                                <div class="col-lg-2 col-md-12 col-sm-12 col-12 text-first">
+                                    <label class="col-form-label my-font-color">Địa điểm :</label>
                                 </div>
-                                <div class="col-7 py-1">
+                                <div class="col-lg-7 col-md-9 col-sm-9 col-9 py-1 pe-0">
                                     <div class="input-group" id="my-location-text">
                                         <p class="mb-0"><span><b style="font-weight:600;">Hà Nội</b></span></p>
                                     </div>
                                   
                                 </div>
-                                <div class="col-3 py-1 text-center">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-center py-1 ps-0 pe-0">
                                     <button type="button"
                                         class="btn btn-outline-primary btn-md fw-normal my-detail-btn-font"
                                         id="btn-open-update-location" data-bs-toggle="modal" data-bs-target="#formLocation">Cập nhật

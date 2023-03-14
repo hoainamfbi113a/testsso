@@ -100,6 +100,12 @@ body {
     z-index:99999;
 }
 
+@media only screen and (max-width: 501px) {
+    .my-detail-btn-font{
+        font-size:9px !important;
+    } 
+}
+
 @media only screen and (max-width: 1199px) {
     .content-box1 {
         padding-top : 1rem !important;
@@ -129,6 +135,10 @@ body {
         padding-right : 1rem !important;
         padding-left : 1rem !important;
         padding-bottom : 1rem !important;
+    }
+    .my-font-detail{
+        font-size:11px !important;
+        line-height: 15px !important;
     }
     .nav-link {
         font-size:15px !important;
@@ -175,6 +185,9 @@ body {
         padding-right : 1rem !important;
         padding-left : 1rem !important;
         padding-bottom : 1rem !important;
+    }
+    .my-search-header{
+        display : none;
     }
     .my-img-togger{display:none}
     .nav-link {
@@ -446,6 +459,7 @@ color: #9999A4;
 .my-font-detail{
     font-size:12px; 
     font-style: normal !important;
+    line-height: 30px;
 }
 
 .my-detail-btn-font{
@@ -472,8 +486,16 @@ color: #9999A4;
     font-size:12px;
 }
 
+.header .logo {
+    margin-top:-5px;
+}
+
 .my-font-color {
     color: #B5B5C3;
+}
+
+.my-font-color-2{
+    color: #7E8299;
 }
 
 .my-social-text {

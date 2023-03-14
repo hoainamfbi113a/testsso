@@ -1207,6 +1207,7 @@ a.dropdown-toggle-user .bi {
     }
     .btn-menu {
         display: block;
+        margin-top:-10px;
     }
     .dropdown-user {
         display: none;
