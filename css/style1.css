@@ -448,6 +448,13 @@ color: #9999A4;
     font-style: normal !important;
 }
 
+.my-detail-btn-font{
+    font-family: 'Roboto';
+    font-weight: 700 !important;
+    font-size:12px;
+    text-transform: uppercase;
+}
+
 .my-font-c1{
     font-family: 'Inter';
     font-style: normal;
