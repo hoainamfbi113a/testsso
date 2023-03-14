@@ -76,8 +76,8 @@ body {
 .my-title2{
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 700 !important; 
+    font-size: 20px !important;
     line-height: 24px;
     color: #3F4254;
 }
@@ -429,6 +429,25 @@ color: #9999A4;
     background: #f74247;
 }
 
+.my-social-1{
+    width: 300px;
+}
+.my-social-1 span {
+    top:-8px;
+}
+.my-social-1 i {
+    top:16px;
+    left:41px;
+    font-style: normal;
+    color:#B5B5C3;
+    font-size:11px;
+}
+
+.my-font-detail{
+    font-size:12px; 
+    font-style: normal !important;
+}
+
 .my-font-c1{
     font-family: 'Inter';
     font-style: normal;
@@ -444,6 +463,15 @@ color: #9999A4;
 
 .my-fontsize-m{
     font-size:12px;
+}
+
+.my-font-color {
+    color: #B5B5C3;
+}
+
+.my-social-text {
+    margin-top:-10px;
+    margin-left: -10px;
 }
 
 .btn-style-1 {

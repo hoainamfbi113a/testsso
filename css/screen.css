@@ -430,7 +430,7 @@ a.dropdown-toggle-user .bi {
 }
 
 .wrapper .sidebar {
-    width: 280px;
+    width: 300px;
     padding: 50px 0px 30px 30px;
     background: #fff;
     margin-top:-39px !important;
@@ -1086,8 +1086,8 @@ a.dropdown-toggle-user .bi {
 
 .outer-social img {
     margin-right: 10px;
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     border-radius: 20px;
 }
 
@@ -1379,7 +1379,7 @@ a.dropdown-toggle-user .bi {
         width: 140px;
     }
     .wrapper .main .content-page>.title-page:first-child {
-        margin-top: -16px;
+        margin-top: 0px;
     }
     /* .section.mt-4 {
         margin-top: 0!important;
