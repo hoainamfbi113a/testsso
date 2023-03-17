@@ -1213,7 +1213,7 @@ a.dropdown-toggle-user .bi {
     }
     .wrapper .sidebar {
         position: absolute;
-        right: 10;
+        right: 10px;
         top: 94px;
         border-radius: 0;
         box-shadow: 0 0 3px #ddd;
