@@ -70,7 +70,7 @@ footer p {
 
 footer p:last-child {
     margin-bottom: 25px;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 footer p a {
@@ -80,7 +80,6 @@ footer p a {
 footer p strong {
     font-weight: 600;
 }
-
 
 /*section-login*/
 
@@ -1214,7 +1213,7 @@ a.dropdown-toggle-user .bi {
     }
     .wrapper .sidebar {
         position: absolute;
-        right: 0;
+        right: 10;
         top: 94px;
         border-radius: 0;
         box-shadow: 0 0 3px #ddd;
