@@ -38,6 +38,34 @@
     font-display: swap;
 }
 
+.my-sidebar-font1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+}
+
+.my-fontstyle1 h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 73px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #9999A4;
+}
+.my-fontstyle1 span{
+    line-height: 95px;
+    color: #9999A4;
+    font-size:25px;
+    vertical-align: bottom;
+}
+
 body {
     font-family: 'Mulish';
     font-size: 16px;
@@ -47,6 +75,17 @@ body {
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
+}
+
+.accordion-item {
+    background-color: #fff;
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #464E5F;
+    background-color: #F5F8FA;
+    box-shadow: none;
 }
 
 .my-modal {
@@ -106,11 +145,11 @@ body {
     z-index:99999;
 }
 
-@media only screen and (max-width: 501px) {
+/* @media only screen and (max-width: 501px) {
     .my-detail-btn-font{
         font-size:9px !important;
     } 
-}
+} */
 
 @media only screen and (max-width: 1199px) {
     .content-box1 {
@@ -141,6 +180,9 @@ body {
         padding-right : 1rem !important;
         padding-left : 1rem !important;
         padding-bottom : 1rem !important;
+    }
+    .my-title2{
+        font-size:17px !important;
     }
     .my-font-detail{
         font-size:11px !important;
@@ -185,6 +227,7 @@ body {
    
 }
 
+
 @media only screen and (max-width: 991px) {
     .content-box1 {
         padding-top : 1rem !important;
@@ -194,6 +237,9 @@ body {
     }
     .my-search-header{
         display : none;
+    }
+    .shadow{
+        box-shadow: none !important;
     }
     .my-img-togger{display:none}
     .nav-link {
@@ -391,10 +437,14 @@ color: #9999A4;
     padding-right:0px !important;
 }
 
+.my-footer-width {
+    width: 90%;
+}
+
 .my-border {
     border-top: 1px solid #E2E2E2;
     border-bottom: 1px solid #E2E2E2;
-    width :96%;
+    width :90%;
 }
 
 .my-border1 {
@@ -489,7 +539,13 @@ color: #8F8F8F;
 
 .my-footer{
     width :100%;
+    margin-left:auto;
+    margin-right: auto;
     background:#fff;
+}
+
+.my-footer1{ 
+    width:90% !important;
 }
 
 .my-footer footer{
@@ -508,6 +564,7 @@ color: #8F8F8F;
     font-size: 13px !important;
     line-height: 20px;
     text-decoration: none;
+    text-transform:capitalize;
     text-align: left;
     color: #565656;
 }
@@ -546,6 +603,7 @@ color: #8F8F8F;
 
 
 .btn-style {
+    font-family: 'Inter';
     height: 42px;
     outline: none;
     box-shadow: none;
@@ -553,7 +611,10 @@ color: #8F8F8F;
     color: #fff;
     width: 100%;
     min-width: 155px;
-    font-weight: 400;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
     text-transform: uppercase;
     display: inline-block;
     width: auto;
@@ -625,10 +686,17 @@ color: #8F8F8F;
 }
 
 .my-detail-btn-font{
-    font-family: 'Roboto';
-    font-weight: 700 !important;
-    font-size:12px;
-    text-transform: uppercase;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    
+    text-align: right;
+    text-decoration-line: underline;
+    
+    color: #7E8299;
 }
 
 .my-font-c1{

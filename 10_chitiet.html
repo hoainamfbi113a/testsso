@@ -23,10 +23,12 @@
 <body>
     <nav class="navbar header  navbar-expand shadow-sm" aria-label="First navbar example">
         <div class="container-fluid">
-            <a class="navbar-brand logo" href="#">
-                <img src="img/logo.svg" style="width:134px;height:40px;" > 
+            <a class="navbar-brand logo mx-auto" href="#">
+                <img src="img/logo.svg" > 
             </a>
-            <div class="collapse navbar-collapse" id="navbarsExample02">
+          
+           
+            <!-- <div class="collapse navbar-collapse" id="navbarsExample02">
                 <ul class="navbar-nav me-auto">
                   <li class="nav-item">
                     <a id="my-togger" href="#" style="margin-left :140px;" class="my-img-togger">
@@ -37,7 +39,7 @@
                 <form>
                   <img class="my-search-header" style="margin-right:20px;" src="img/search.png">
                 </form>
-              </div>
+              </div> -->
             
             
 
@@ -51,63 +53,93 @@
     <section class="section mt-1">
         <div class="container-fluid wrapper">
                     <aside class="sidebar" >
-                        <div class="box-user">
-                            <p style="color:#B5B5C3;"><i style="font-size:12px !important;font-weight: 600;">THÔNG TIN TÀI KHOẢN</i></p>
-                            <strong class="name my-font-c1 mt-3" style="font-size:16px;">Nguyễn Lan Anh</strong>
-                            <p class="my-font-c1">Ngày tham gia: <span>20/11/2022</span></p>
-                            <div class="outer-score">
-                                <span class="border-full"></span>
-                                <h3 class="my-font-c1">Thành viên Tuổi Trẻ Sao</h3>
-                                <p class="my-font-c1">Ngày hết hạn: <span>20/11/2022</span></p>
-                                
-                            </div>
-                            <div class="outer-score">
-                                <span class="border-full"></span>
-                               
-                                <div class="tt-sao">
-                                    Sao mua: 
-                                    <span class="score">
+                        <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header d-grid gap-2" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button my-sidebar-font1" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    <img src="img/accord1.png">&nbsp;&nbsp;Thông tin tài khoản
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body box-user">
+                                    <strong class="name my-font-c1" style="font-size:16px;">Nguyễn Lan Anh</strong>
+                                    <p class="my-font-c1">Ngày tham gia: <span>20/11/2022</span></p>
+                                    <div class="outer-score">
+                                        <span class="border-full"></span>
+                                        <h3 class="my-font-c1">Thành viên Tuổi Trẻ Sao</h3>
+                                        <p class="my-font-c1">Ngày hết hạn: <span>20/11/2022</span></p>
                                         
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-star-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                    </svg>
-                                    100
-                                    </span>
-                                    
+                                    </div>
+                                    <div class="outer-score">
+                                        <span class="border-full"></span>
+                                       
+                                        <div class="tt-sao">
+                                            Sao mua: 
+                                            <span class="score">
+                                                
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            100
+                                            </span>
+                                            
+                                        </div>
+                                        <p class="my-font-c1">Ngày hết hạn: <span>20/11/2022</span></p>
+                <!--                        
+                                        <strong><i>Ngày hết hạn: 12/11/2023</i></strong> -->
+                                    </div>
+                                    <div class="outer-score">
+                                        <span class="border-full"></span>
+                                       
+                                        
+                                       
+                                        <div class="tt-sao">Sao khuyến mãi: 
+                                            <span class="score">
+                                                 
+                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                                 class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                 <path
+                                                     d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                             </svg>
+                                             10
+                                            </span>
+                                           
+                                        </div>
+                                        <p class="my-font-c1">Ngày hết hạn: <span>20/11/2022</span></p>
+                                    </div>
                                 </div>
-                                <p class="my-font-c1">Ngày hết hạn: <span>20/11/2022</span></p>
-        <!--                        
-                                <strong><i>Ngày hết hạn: 12/11/2023</i></strong> -->
+                              </div>
                             </div>
-                            <div class="outer-score">
-                                <span class="border-full"></span>
-                               
-                                
-                               
-                                <div class="tt-sao">Sao khuyến mãi: 
-                                    <span class="score">
-                                         
-                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                         class="bi bi-star-fill" viewBox="0 0 16 16">
-                                         <path
-                                             d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                     </svg>
-                                     10
-                                    </span>
-                                   
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button collapsed my-sidebar-font1" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    <img src="img/Star.png">&nbsp;&nbsp;TUỔI TRẺ SAO
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body box-user">
+                                  &nbsp;
                                 </div>
-                                <p class="my-font-c1">Ngày hết hạn: <span>20/11/2022</span></p>
+                              </div>
                             </div>
-                        </div>
-                        <ul class="nav-list">
-                            <li class="mt-1">
-                                <a class="nav-item my-font-c1 active" href="#">
-                                    <img src="img/Mirror.png" />
-                                    &nbsp; Rao vặt
-                                </a>
-                            </li>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button my-sidebar-font1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    <img src="img/Mirror.png">&nbsp;&nbsp;RAO VẶT
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="accordion-body box-user">
+                                    &nbsp;
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    
+                        
+                        <ul class="nav-list ms-3 mt-3">
                             <li class="mt-1">
                                 <a class="nav-item my-font-c1" href="#">
                                     <img src="img/gen007.png" />
@@ -134,7 +166,7 @@
                             </li>
                             
                         </ul>
-                        <div class="box-user my-box-user">
+                        <div class="my-box-user ms-3">
                             <p class="mt-3">
                                 <a class="nav-item my-font-c1" style="text-decoration: none;color: #464E5F !important;font-weight: 600;" href="#">
                                     <img src="img/arr011.png" style="width:24px !important ;height:24px !important;"/>
@@ -147,7 +179,7 @@
                 <main class="main">
                     <div class="content-page">
                         <div class="title-page text-center my-title2">
-                            Báo Tuổi Trẻ cam kết bảo mật thông tin
+                            &nbsp;&nbsp;Báo Tuổi Trẻ cam kết bảo mật thông tin
                         </div>
                         <form class="form-update-profile frm-general frm-info w-80 py-4" id="form-update-profile">
                             <!-- <div class="row mb-4">
@@ -186,10 +218,11 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-center py-1 ps-0 pe-0">
-                                    <button type="button"
-                                        class="btn btn-outline-primary btn-md fw-normal my-detail-btn-font"
-                                        id="btn-open-update-name1" data-bs-toggle="modal" data-bs-target="#formName">Cập nhật
-                                    </button>
+                                    
+                                    <a href="javascript:;" class="my-detail-btn-font"
+                                    id="btn-open-update-name1" data-bs-toggle="modal" data-bs-target="#formName" >
+                                    Cập nhật
+                                    </a>
                                 </div>
                             </div>
                             <div class="row mb-3 align-items-center form-update">
@@ -206,10 +239,10 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-center py-1 ps-0 pe-0">
-                                    <button type="button"
-                                        class="btn btn-outline-primary btn-md fw-normal my-detail-btn-font"
-                                        id="btn-open-update-email1" data-bs-toggle="modal" data-bs-target="#formEmail">Cập nhật
-                                    </button>
+                                    <a href="javascript:;" class="my-detail-btn-font"
+                                    id="btn-open-update-email1" data-bs-toggle="modal" data-bs-target="#formEmail" >
+                                    Cập nhật
+                                    </a>
                                 </div>
                             </div>
                             <div class="row mb-3 align-items-center form-update">
@@ -222,10 +255,11 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-center py-1 ps-0 pe-0">
-                                    <button type="button"
-                                        class="btn btn-outline-primary btn-md fw-normal my-detail-btn-font"
-                                        id="btn-open-update-phone1" data-bs-toggle="modal" data-bs-target="#formPhone">Cập nhật
-                                    </button>
+                                    
+                                    <a href="javascript:;" class="my-detail-btn-font"
+                                    id="btn-open-update-phone1" data-bs-toggle="modal" data-bs-target="#formPhone" >
+                                    Cập nhật
+                                    </a>
                                 </div>
                                 
                             </div>
@@ -239,10 +273,10 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-center py-1 ps-0 pe-0">
-                                    <button type="button"
-                                        class="btn btn-outline-primary btn-md fw-normal my-detail-btn-font"
-                                        id="btn-open-update-pass1" data-bs-toggle="modal" data-bs-target="#formPass">Cập nhật
-                                    </button>
+                                    <a href="javascript:;" class="my-detail-btn-font"
+                                    id="btn-open-update-pass1" data-bs-toggle="modal" data-bs-target="#formPass">
+                                    Cập nhật
+                                    </a>
                                 </div>
                             </div>
                             <div class="row mb-3 align-items-center form-update">
@@ -258,10 +292,10 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-center py-1 ps-0 pe-0">
-                                    <button type="button"
-                                        class="btn btn-outline-primary btn-md fw-normal my-detail-btn-font"
-                                        id="btn-open-update-sex1" data-bs-toggle="modal" data-bs-target="#formSex">Cập nhật
-                                    </button>
+                                    <a href="javascript:;" class="my-detail-btn-font"
+                                    id="btn-open-update-sex1" data-bs-toggle="modal" data-bs-target="#formSex">
+                                    Cập nhật
+                                    </a>
                                 </div>
                             </div>
                             <div class="row mb-3 align-items-center form-update">
@@ -274,10 +308,9 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-center py-1 ps-0 pe-0">
-                                    <button type="button"
-                                        class="btn btn-outline-primary btn-md fw-normal my-detail-btn-font"
-                                        id="btn-open-update-date1" data-bs-toggle="modal" data-bs-target="#formDate">Cập nhật
-                                    </button>
+                                    <a href="javascript:;" class="my-detail-btn-font"
+                                    id="btn-open-update-date1" data-bs-toggle="modal" data-bs-target="#formDate">Cập nhật
+                                    </a>
                                 </div>
                             </div>
                             <div class="row mb-3 align-items-center form-update">
@@ -291,10 +324,9 @@
                                   
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-center py-1 ps-0 pe-0">
-                                    <button type="button"
-                                        class="btn btn-outline-primary btn-md fw-normal my-detail-btn-font"
-                                        id="btn-open-update-location" data-bs-toggle="modal" data-bs-target="#formLocation">Cập nhật
-                                    </button>
+                                    <a href="javascript:;" class="my-detail-btn-font"
+                                    id="btn-open-update-location" data-bs-toggle="modal" data-bs-target="#formLocation">Cập nhật
+                                    </a>
                                 </div>
                             </div>
                             
@@ -617,6 +649,30 @@
                         </div>
     
                     </div>
+
+                    <div class="content-page mt-3 mb-3">
+                        <div class="title-page my-title2">
+                            Tải ứng dụng Báo Tuổi Trẻ
+                        </div>
+                        <div class="form-update-profile frm-general frm-info w-80 py-4" id="f">
+                            <div class="d-flex justify-content-around bd-highlight mb-3">
+                                <div class="p-2 bd-highlight">
+                                    <img src="img/qr_code.png" />
+                                </div> 
+                                <div class="p-2 bd-highlight">
+                                    <a href="#">
+                                        <img src="img/apple_app.png" />
+                                    </a>
+                                </div>
+                                <div class="p-2 bd-highlight">
+                                    <a href="#">
+                                        <img src="img/gg_app.png" />
+                                    </a>
+                                </div>
+                              </div>
+                        </div>
+    
+                    </div>
                 </main>
             
             
@@ -625,94 +681,92 @@
 
     
 
-    <section class="my-footer">
-        <footer class="container-fluid mt-auto bg-white">
+    <footer class="my-footer" style="text-align: left;" >
+        <div class="container-fluid mt-auto bg-white">
             <div class="row">
               <div class="footer col-12">
                 <div class="footer__top">
-                    <div class="d-flex justify-content-start ps-0">
+                    <div class="d-flex justify-content-center ps-0">
                         <div class="footer__nav">
                             <ul class="nav">
                                 <li class="nav-item">
-                                    <a href="/" title="Trang chủ" class="nav-link active ps-0">Trang chủ
+                                    <a href="https://tuoitre.vn" title="Trang chủ" class="nav-link active ps-0">Trang chủ
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" title="MEDIA" rel="nofollow" target="_blank" class="nav-link">Media
+                                    <a href="https://tuoitre.vn" title="MEDIA" rel="nofollow" target="_blank" class="nav-link">Media
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/thoi-su.htm" title="THỜI SỰ" class="nav-link ">Thời sự
+                                    <a href="https://tuoitre.vn/thoi-su.htm" title="THỜI SỰ" class="nav-link ">Thời sự
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/the-gioi.htm" title="THẾ GIỚI" class="nav-link ">Thế giới
+                                    <a href="https://tuoitre.vn/the-gioi.htm" title="THẾ GIỚI" class="nav-link ">Thế giới
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/phap-luat.htm" title="PHÁP LUẬT" class="nav-link ">Pháp luật
+                                    <a href="https://tuoitre.vn/phap-luat.htm" title="PHÁP LUẬT" class="nav-link ">Pháp luật
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/kinh-doanh.htm" title="KINH DOANH" class="nav-link ">Kinh doanh
+                                    <a href="https://tuoitre.vn/kinh-doanh.htm" title="KINH DOANH" class="nav-link ">Kinh doanh
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/cong-nghe.htm" title="CÔNG NGHỆ" class="nav-link ">Công nghệ
+                                    <a href="https://tuoitre.vn/cong-nghe.htm" title="CÔNG NGHỆ" class="nav-link ">Công nghệ
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/xe.htm" title="XE" class="nav-link ">Xe
+                                    <a href="https://tuoitre.vn/xe.htm" title="XE" class="nav-link ">Xe
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/du-lich.htm" title="DU LỊCH" class="nav-link ">Du lịch
+                                    <a href="https://tuoitre.vn/du-lich.htm" title="DU LỊCH" class="nav-link ">Du lịch
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/nhip-song-tre.htm" title="NHỊP SỐNG TRẺ" class="nav-link ">Nhịp sống trẻ
+                                    <a href="https://tuoitre.vn/nhip-song-tre.htm" title="NHỊP SỐNG TRẺ" class="nav-link ">Nhịp sống trẻ
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/van-hoa.htm" title="VĂN HÓA" class="nav-link ">Văn hóa
+                                    <a href="https://tuoitre.vn/van-hoa.htm" title="VĂN HÓA" class="nav-link ">Văn hóa
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/giai-tri.htm" title="GIẢI TRÍ" class="nav-link ">Giải trí
+                                    <a href="https://tuoitre.vn/giai-tri.htm" title="GIẢI TRÍ" class="nav-link ">Giải trí
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/the-thao.htm" title="THỂ THAO" class="nav-link ">Thể thao
+                                    <a href="https://tuoitre.vn/the-thao.htm" title="THỂ THAO" class="nav-link ">Thể thao
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/giao-duc.htm" title="GIÁO DỤC" class="nav-link ">Giáo dục
+                                    <a href="https://tuoitre.vn/giao-duc.htm" title="GIÁO DỤC" class="nav-link ">Giáo dục
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/khoa-hoc.htm" title="KHOA HỌC" class="nav-link ">Khoa học
+                                    <a href="https://tuoitre.vn/khoa-hoc.htm" title="KHOA HỌC" class="nav-link ">Khoa học
                                     </a>
                                 </li>
                                 <li class="nav-item" >
-                                    <a href="/suc-khoe.htm" title="Sức khỏe" class="nav-link ">Sức khỏe
+                                    <a href="https://tuoitre.vn/suc-khoe.htm" title="Sức khỏe" class="nav-link ">Sức khỏe
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/gia-that.htm" title="Giả thật" class="nav-link ">Giả thật
+                                    <a href="https://tuoitre.vn/gia-that.htm" title="Giả thật" class="nav-link ">Giả thật
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/ban-doc.htm" title="Bạn đọc" class="nav-link ">Bạn đọc
+                                    <a href="https://tuoitre.vn/ban-doc.htm" title="Bạn đọc" class="nav-link ">Bạn đọc
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="footer__middle container-fluid ps-0">
-                    <div class="row">
-                        <div class="box col-6 ps-0">
-    
+                <div class="container-fluid mx-auto d-flex justify-content-between my-footer1">
+                        <div >
                             <p class="text my-footer-f2 ms-0 mb-0 mt-0">
                                 Tổng biên tập: Lê Thế Chữ
                             </p>
@@ -720,11 +774,11 @@
                                 Giấy phép hoạt động báo điện tử tiếng Việt, tiếng Anh Số 561/GP-BTTTT, cấp ngày 25-11-2022.
                             </p>
                             <p class="text my-footer-f2 ms-0">
-                                <a href="/thong-tin-toa-soan.htm" class="my-footer-f1" title="Thông tin tòa soạn">Thông tin tòa soạn - </a>
+                                <a href="https://tuoitre.vn/thong-tin-toa-soan.htm" class="my-footer-f1" title="Thông tin tòa soạn">Thông tin tòa soạn - </a>
                                 <a href="http://www.thanhdoan.hochiminhcity.gov.vn" class="my-footer-f1" title="Thành Đoàn TP.HCM" rel="nofollow" target="_blank">Thành Đoàn TP.HCM</a>
                             </p>
                         </div>
-                        <div class="box col-4">
+                        <div >
                             <p class="text my-footer-f2 ps-0 ms-0 mb-0 mt-0">
                                 Địa chỉ: 60A Hoàng Văn Thụ, P.9, Q.Phú Nhuận, Tp. Hồ Chí Minh
                             </p>
@@ -736,7 +790,8 @@
                             </p>
     
                         </div>
-                        <div class="box col-2">
+  
+                        <div>
                             <ul class="navbar-nav list">
                                 <li class="nav-item">
                                   <a class="nav-link my-footer-f4" rel="nofollow" target="_blank" href="https://quangcao.tuoitre.vn" title="Liên hệ Quảng cáo">Liên hệ Quảng cáo</a>
@@ -749,54 +804,53 @@
                                 </li>
                               </ul>
                         </div>
-                    </div>
                 </div>
-                <div class="container-fluid d-flex justify-content-start my-border pt-2 float-start">
+                <div class="container-fluid mx-auto d-flex justify-content-between my-border pt-2">
                     <div class="row">
                         <div class="col-12">
                             <ul class="nav">
                                 <li class="nav-item">
-                                    <a href="#"  class="nav-link">
+                                    <a href="https://tuoitre.vn"  class="nav-link">
                                         <img src="img/ftt.svg" />
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="https://tv.tuoitre.vn" class="nav-link">
                                         <img src="img/ftttv.svg" />
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="https://podcast.tuoitre.vn" class="nav-link">
                                         <img src="img/fttpodcast.svg" />
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="https://cuoi.tuoitre.vn" class="nav-link">
                                         <img src="img/fttc.svg" />
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="https://cuoituan.tuoitre.vn" class="nav-link">
                                         <img src="img/fttct.svg" />
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="https://tuoitrenews.vn" class="nav-link">
                                         <img src="img/fttn.svg" />
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="https://tv.tuoitre.vn" class="nav-link">
                                         <img src="img/fttmedia.svg" />
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="https://raovat.tuoitre.vn" class="nav-link">
                                         <img src="img/fttrv.svg" />
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#"class="nav-link">
+                                    <a href="https://muctim.com.vn"class="nav-link">
                                         <img src="img/fmuctim.svg" />
                                     </a>
                                 </li>
@@ -805,7 +859,7 @@
                     </div>
                 </div>
     
-                <div class="container-fluid float-start mt-2">
+                <div class="container-fluid my-footer-width mx-auto justify-content-between mt-2">
                     <div class="row">
                         <p class="text col-11 my-footer-f5">
                             © Copyright 2023 TuoiTre Online, All rights reserved ® Tuổi Trẻ Online giữ bản quyền nội dung trên website này
@@ -813,7 +867,7 @@
                         <div class="col-1">
                             <ul class="nav">
                                 <li>
-                                    <a href="https://www.youtube.com/channel/UCrwJa6KRHWnJpJPZNeKKcvA" title="Quan tâm Tuổi Trẻ trên Youtube" target="_blank" rel="nofollow" class="icon">
+                                    <a class="ms-1" href="https://www.youtube.com/channel/UCrwJa6KRHWnJpJPZNeKKcvA" title="Quan tâm Tuổi Trẻ trên Youtube" target="_blank" rel="nofollow" class="icon">
                                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <rect x="0.5" y="1.16699" width="23" height="23" rx="11.5" stroke="#666666"></rect>
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75984 16.9011C6.52448 16.8314 6.30973 16.7076 6.13372 16.5399C5.9577 16.3722 5.82559 16.1657 5.74851 15.9377C5.3081 14.7594 5.1776 9.83915 6.02581 8.86784C6.30811 8.55186 6.70668 8.35732 7.13501 8.32645C9.41049 8.0876 16.4408 8.11945 17.2483 8.40606C17.4754 8.47799 17.6828 8.59915 17.8552 8.76047C18.0275 8.92178 18.1602 9.11908 18.2433 9.33757C18.7245 10.5557 18.7408 14.9823 18.178 16.1527C18.0287 16.4573 17.7788 16.7041 17.4685 16.8533C16.6203 17.2673 7.88534 17.2594 6.75984 16.9011ZM10.3729 14.5922L14.4508 12.5222L10.3729 10.4363V14.5922Z" fill="#666666"></path>
@@ -821,7 +875,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.instagram.com/baotuoitre/" title="Quan tâm Tuổi Trẻ trên Instagram" target="_blank" rel="nofollow" class="icon">
+                                    <a class="ms-1" href="https://www.instagram.com/baotuoitre/" title="Quan tâm Tuổi Trẻ trên Instagram" target="_blank" rel="nofollow" class="icon">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <rect x="0.5" y="0.5" width="23" height="23" rx="11.5" stroke="#565656"></rect>
                                             <path d="M17.6 11.8C17.6 13.1377 17.6 14.4754 17.6 15.813C17.6 16.8852 16.875 17.6 15.813 17.6C13.1377 17.6 10.4725 17.6 7.79718 17.6C6.725 17.6 6 16.875 6 15.813C6 13.1377 6 10.4725 6 7.79718C6 6.725 6.725 6 7.78697 6C10.4623 6 13.1275 6 15.8028 6C16.875 6 17.5898 6.725 17.5898 7.78697C17.6 9.12465 17.6 10.4623 17.6 11.8ZM14.8532 11.8102C14.843 10.1151 13.4644 8.75704 11.7694 8.76725C10.1049 8.77746 8.74683 10.1458 8.74683 11.8204C8.74683 13.5155 10.1254 14.8838 11.8204 14.8838C13.4951 14.8736 14.8634 13.4951 14.8532 11.8102ZM15.5373 8.76725C15.9049 8.76725 16.2113 8.46092 16.2113 8.0831C16.2113 7.70528 15.9049 7.40915 15.5373 7.40915C15.1697 7.40915 14.8634 7.71549 14.8634 8.09331C14.8634 8.46092 15.1697 8.76725 15.5373 8.76725Z" fill="#565656"></path>
@@ -830,7 +884,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.facebook.com/baotuoitre" title="Quan tâm Tuổi Trẻ trên Facebook" target="_blank" rel="nofollow" class="icon">
+                                    <a class="ms-1" href="https://www.facebook.com/baotuoitre" title="Quan tâm Tuổi Trẻ trên Facebook" target="_blank" rel="nofollow" class="icon">
                                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <rect x="0.5" y="1.16699" width="23" height="23" rx="11.5" stroke="#666666"></rect>
                                             <path d="M12.9966 12.8847H15.2299L15.5805 10.6021H12.9961V9.35462C12.9961 8.40641 13.3041 7.56559 14.1857 7.56559H15.6023V5.57366C15.3534 5.53985 14.827 5.46582 13.8323 5.46582C11.7553 5.46582 10.5375 6.5694 10.5375 9.08364V10.6021H8.40234V12.8847H10.5375V19.1584C10.9604 19.2224 11.3887 19.2658 11.8284 19.2658C12.2258 19.2658 12.6137 19.2293 12.9966 19.1772V12.8847Z" fill="#666666"></path>
@@ -845,12 +899,13 @@
             
             </div>
             </div>
-          </footer>
-    </section>
-    <section class="footer-mobile container-fluid">
+          </div>
+      </footer>
+
+    <section class="footer-mobile container-fluid ps-0 pe-0">
         <div class="d-flex justify-content-around bd-highlight bg-white my-border1">
             <div class="p-2 bd-highlight">
-                <a href="#">
+                <a href="https://tuoitre.vn">
                     <img src="img/logo_bk.svg" width="105px" height="30px"> 
                 </a>
             </div>
@@ -858,7 +913,7 @@
             <div class="p-2 bd-highlight">
                 <ul class="nav text-center">
                     <li>
-                        <a href="https://www.youtube.com/channel/UCrwJa6KRHWnJpJPZNeKKcvA" title="Quan tâm Tuổi Trẻ trên Youtube" target="_blank" rel="nofollow" class="icon">
+                        <a class="ms-3" href="https://www.youtube.com/channel/UCrwJa6KRHWnJpJPZNeKKcvA" title="Quan tâm Tuổi Trẻ trên Youtube" target="_blank" rel="nofollow" class="icon">
                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="1.16699" width="23" height="23" rx="11.5" stroke="#666666"></rect>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75984 16.9011C6.52448 16.8314 6.30973 16.7076 6.13372 16.5399C5.9577 16.3722 5.82559 16.1657 5.74851 15.9377C5.3081 14.7594 5.1776 9.83915 6.02581 8.86784C6.30811 8.55186 6.70668 8.35732 7.13501 8.32645C9.41049 8.0876 16.4408 8.11945 17.2483 8.40606C17.4754 8.47799 17.6828 8.59915 17.8552 8.76047C18.0275 8.92178 18.1602 9.11908 18.2433 9.33757C18.7245 10.5557 18.7408 14.9823 18.178 16.1527C18.0287 16.4573 17.7788 16.7041 17.4685 16.8533C16.6203 17.2673 7.88534 17.2594 6.75984 16.9011ZM10.3729 14.5922L14.4508 12.5222L10.3729 10.4363V14.5922Z" fill="#666666"></path>
@@ -866,7 +921,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/baotuoitre/" title="Quan tâm Tuổi Trẻ trên Instagram" target="_blank" rel="nofollow" class="icon">
+                        <a class="ms-3" href="https://www.instagram.com/baotuoitre/" title="Quan tâm Tuổi Trẻ trên Instagram" target="_blank" rel="nofollow" class="icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="23" height="23" rx="11.5" stroke="#565656"></rect>
                                 <path d="M17.6 11.8C17.6 13.1377 17.6 14.4754 17.6 15.813C17.6 16.8852 16.875 17.6 15.813 17.6C13.1377 17.6 10.4725 17.6 7.79718 17.6C6.725 17.6 6 16.875 6 15.813C6 13.1377 6 10.4725 6 7.79718C6 6.725 6.725 6 7.78697 6C10.4623 6 13.1275 6 15.8028 6C16.875 6 17.5898 6.725 17.5898 7.78697C17.6 9.12465 17.6 10.4623 17.6 11.8ZM14.8532 11.8102C14.843 10.1151 13.4644 8.75704 11.7694 8.76725C10.1049 8.77746 8.74683 10.1458 8.74683 11.8204C8.74683 13.5155 10.1254 14.8838 11.8204 14.8838C13.4951 14.8736 14.8634 13.4951 14.8532 11.8102ZM15.5373 8.76725C15.9049 8.76725 16.2113 8.46092 16.2113 8.0831C16.2113 7.70528 15.9049 7.40915 15.5373 7.40915C15.1697 7.40915 14.8634 7.71549 14.8634 8.09331C14.8634 8.46092 15.1697 8.76725 15.5373 8.76725Z" fill="#565656"></path>
@@ -875,7 +930,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/baotuoitre" title="Quan tâm Tuổi Trẻ trên Facebook" target="_blank" rel="nofollow" class="icon">
+                        <a class="ms-3" href="https://www.facebook.com/baotuoitre" title="Quan tâm Tuổi Trẻ trên Facebook" target="_blank" rel="nofollow" class="icon">
                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="1.16699" width="23" height="23" rx="11.5" stroke="#666666"></rect>
                                 <path d="M12.9966 12.8847H15.2299L15.5805 10.6021H12.9961V9.35462C12.9961 8.40641 13.3041 7.56559 14.1857 7.56559H15.6023V5.57366C15.3534 5.53985 14.827 5.46582 13.8323 5.46582C11.7553 5.46582 10.5375 6.5694 10.5375 9.08364V10.6021H8.40234V12.8847H10.5375V19.1584C10.9604 19.2224 11.3887 19.2658 11.8284 19.2658C12.2258 19.2658 12.6137 19.2293 12.9966 19.1772V12.8847Z" fill="#666666"></path>
@@ -893,14 +948,14 @@
             <p class="my-footer-font6">Giấy phép hoạt động báo điện tử tiếng Việt, tiếng Anh</p>
             <p class="my-footer-font6">Số 561/GP-BTTTT, cấp ngày 25-11-2022.</p>
             <p class="my-footer-font6">
-                <a href="/thong-tin-toa-soan.htm" class="my-footer-f1" title="Thông tin tòa soạn">Thông tin tòa soạn - </a>
+                <a href="https://tuoitre.vn/thong-tin-toa-soan.htm" class="my-footer-f1" title="Thông tin tòa soạn">Thông tin tòa soạn - </a>
                 <a href="http://www.thanhdoan.hochiminhcity.gov.vn" class="my-footer-f1" title="Thành Đoàn TP.HCM" rel="nofollow" target="_blank">Thành Đoàn TP.HCM</a>
             </p>
             <p class="my-footer-font6">Địa chỉ: 60A Hoàng Văn Thụ, P.9, Q.Phú Nhuận, Tp. Hồ Chí Minh</p>
             <p class="my-footer-font6">Hotline: 0918.033.133 - Email: tto@tuoitre.com.vn</p>
             <p class="my-footer-font6">Phòng Quảng Cáo Báo Tuổi Trẻ: 028.39974848</p>
             <p class="my-footer-font6">
-                <a href="#" class="my-footer-f1" title="Thông tin tòa soạn">Liên hệ Quảng cáo |</a>
+                <a href="https://tuoitre.vn/thong-tin-toa-soan.htm" class="my-footer-f1" title="Thông tin tòa soạn">Liên hệ Quảng cáo |</a>
                 <a href="#" class="my-footer-f1" title="Điều khoản bảo mật" rel="nofollow" target="_blank">Điều khoản bảo mật |</a>
                 <a href="#" class="my-footer-f1" title="Góp ý" rel="nofollow" target="_blank">Góp ý</a>
             </p>
