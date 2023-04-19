@@ -753,3 +753,12 @@ color: #8F8F8F;
     color: #fff;
     background: #2f5aa9;
 }
+.myfont01{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #9999A4;
+}
