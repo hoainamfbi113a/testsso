@@ -776,5 +776,6 @@ color: #8F8F8F;
 
 .page-link {
     border:none;
-    
+    border: radius 2px;
+    margin:3px;
 }
