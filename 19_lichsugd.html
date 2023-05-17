@@ -164,16 +164,22 @@
                                     &nbsp; Hoạt động bình luận
                                 </a>
                             </li>
+
                             <li class="pb-0 mt-4 mb-1">
-                                <a class="nav-item my-font-c1 active" href="#">
-                                    <img src="img/gifcodea.png" />
+                                <a class="nav-item my-font-c1" href="#">
+                                    <img src="img/gifcode.png" />
                                     &nbsp; Giftcode
                                 </a>
                             </li>
-                            
+                            <li class="pb-0 mt-4 mb-1">
+                                <a class="nav-item my-font-c1 active" href="#">
+                                    <img src="img/Group-chatb.png" />
+                                    &nbsp; Lịch sử giao dịch
+                                </a>
+                            </li>
                             
                         </ul>
-                        <div class="my-box-user ms-3 mt-2">
+                        <div class="my-box-user ms-3">
                             <p class="mt-3">
                                 <a class="nav-item my-font-c1" style="text-decoration: none;color: #464E5F !important;font-weight: 600;" href="#">
                                     <img src="img/arr011.png" style="width:24px !important ;height:24px !important;"/>
@@ -186,21 +192,75 @@
                 <main class="main">
                     <div class="content-page">
                         <div class="title-page text-center my-title2">
-                            &nbsp;&nbsp;Giftcode
+                            &nbsp;&nbsp;Hoạt động bình luận 
                         </div>
                         <div class="inner-page mb-5">
-                            <form class="frm-general frm-info w-80 py-5">
-                                <div class="row mb-4 align-items-center form-update">
-                  
-                                  <div class="col-lg-9">
-                                    <input type="text" class="form-control input-update" placeholder="Nhập gift code" name="name">
-                                  </div>
-                                  <div class="col-lg-3">
-                                    <button type="submit" class="btn btn-style btn-code">Nhập gift code</button>
-                                  </div>
+                            <form class="form-update-profile frm-general frm-info mx-auto ps-4 pe-4 py-4" id="form-update-profile">
+                                <div class="row">
+                                    <div class="col-12 ">
+                                        <ul class="nav nav-tabs d-flex flex-row" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                              <button class="nav-link active w-auto my-title" id="btn-tab1" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">Lịch sử thanh toán</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                              <button class="nav-link w-auto my-title" id="btn-tab2" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">Lịch sử thanh toán</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link w-auto my-title" id="btn-tab3" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">Lịch sử thanh toán</button>
+                                              </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            
+                                            <div class="mt-2 tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1">
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <thead>
+                                                          <tr>
+                                                            <th class="myfonttable" scope="col">&nbsp;&nbsp;Ngày</th>
+                                                            <th class="myfonttable" scope="col">Mô tả</th>
+                                                            <th class="myfonttable" scope="col">Giá tiền</th>
+                                                            <th class="myfonttable" scope="col">Mã thanh toán</th>
+                                                            <th class="myfonttable" scope="col">Hình thức</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                          <tr>
+                                                            <th class="myfonttable1" scope="row">22:29:25, 31/03/2023</th>
+                                                            <td class="myfonttable1">Gói đọc báo TTDB-30D, 100 Sao</td>
+                                                            <td class="myfonttable1">123,000 VNĐ</td>
+                                                            <td class="myfonttable1">2a3a74a5g6iey7x5</td>
+                                                            <td class="myfonttable1">Mono</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <th class="myfonttable1" scope="row">22:29:25, 31/03/2023</th>
+                                                            <td class="myfonttable1">
+                                                                1 x Gói Tuổi Trẻ Sao & E-Pap... </td>
+                                                            <td class="myfonttable1">500,000 VNĐ</td>
+                
+                                                            <td class="myfonttable1">2a3a74a5g6iey7x5</td>
+                                                            <td class="myfonttable1">Mono</td>
+                                                          </tr>
+                                                          
+                                                        </tbody>
+                                                      </table>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2">
+                                                123
+                                                
+                                            </div>
+                                            <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3">
+                                                54543534                                            
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
                                 </div>
-                              </form>
-                          </div>
+                                                                
+                            </form>
+                        </div>
     
                     </div>
                             <!-- MOdal  -->
