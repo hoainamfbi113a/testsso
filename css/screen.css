@@ -1226,6 +1226,7 @@ a.dropdown-toggle-user .bi {
         z-index: 999999;
         display: none;
         width: 100vw;
+        overflow: scroll !important;
         background-color: #fff;
         height: calc(100vh - 55px);
     }
