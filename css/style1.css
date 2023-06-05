@@ -569,6 +569,8 @@ color: #8F8F8F;
     text-transform:capitalize;
     text-align: left;
     color: #565656;
+    position :relative;
+    left :-8px;
 }
 
 .my-footer-f1:hover {
