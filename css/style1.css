@@ -559,6 +559,10 @@ color: #8F8F8F;
     color: #8F8F8F;
 }
 
+ul.nav li:last-child a {
+    padding-right: 0 !important;
+}
+
 .my-footer-f4{
     font-family: 'Inter';
     font-style: normal;
@@ -570,7 +574,7 @@ color: #8F8F8F;
     text-align: left;
     color: #565656;
     position :relative;
-    left :-8px;
+    left :-12px;
 }
 
 .my-footer-f1:hover {
@@ -588,6 +592,8 @@ color: #8F8F8F;
     padding-left: 5px !important;
     line-height: 20px;
     color:#565656;
+    position:relative;
+    left:5px;
     text-decoration: none;
 }
 
@@ -604,6 +610,8 @@ color: #8F8F8F;
     /* identical to box height, or 154% */
     text-align: left !important;
     color: #8F8F8F;
+    position:relative;
+    left: -20px;
 }
 
 
@@ -845,10 +853,11 @@ height: 83px;
 
 .my-border {
     padding : 0 !important;
+    width:99%;
 }
 
 .my-border .nav-item a {
-    padding : 8px 9px !important;
+    padding : 8px 11px !important;
 }
 
 .my-border .nav-item a img{
@@ -857,4 +866,9 @@ height: 83px;
 
 .sidebar .accordion-button:first {
     border-radius: 10px !important;
+}
+
+.my-footer-f6 {
+    position:relative;
+    right :-20px;
 }
