@@ -235,6 +235,21 @@ body {
         padding-left : 1rem !important;
         padding-bottom : 1rem !important;
     }
+
+    .myfix1 {
+        position:fixed;
+        bottom:-18px;
+        left:-10px;
+        width:100%;
+        padding-top:10px;
+        padding-bottom: 15px;
+        padding-left:0px;
+        border-top:1px solid #eee;
+
+        background-color: #fff;
+    }
+
+
     .my-search-header{
         display : none;
     }
@@ -881,3 +896,4 @@ a.active {
     position: relative;
     left : -20px;
 }
+
