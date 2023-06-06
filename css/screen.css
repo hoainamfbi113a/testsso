@@ -1205,6 +1205,9 @@ a.dropdown-toggle-user .bi {
     body {
         padding-top: 55px;
     }
+    .box-user {
+        padding-top:0px;
+    }
     .frm-info .text-end {
         text-align: left !important;
     }
