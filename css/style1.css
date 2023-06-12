@@ -236,6 +236,10 @@ body {
         padding-bottom : 1rem !important;
     }
 
+    .footer-mobile {
+        margin-bottom: 120px !important;
+    }
+
     /* body {
         overflow: hidden !important;
     } */
@@ -270,7 +274,7 @@ body {
     }
     
     .myfix2{
-        margin-bottom:120px !important;
+        margin-bottom:100px !important;
     }
 
     .myfix3{
