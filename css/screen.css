@@ -1220,7 +1220,7 @@ a.dropdown-toggle-user .bi {
         display: none;
     }
     .wrapper .sidebar {
-        position: absolute;
+        position: fixed !important;
         right: 10px;
         top: 25px;
         border-radius: 0;

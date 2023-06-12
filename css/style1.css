@@ -253,12 +253,20 @@ body {
         bottom:-18px;
         left:-10px;
         width:100%;
-        padding-top:10px;
-        padding-bottom: 15px;
+        /* padding-top:10px; */
+        line-height: 38px !important;
+        vertical-align:middle; 
+        text-align: left;
+        padding-bottom: 10px;
         padding-left:0px;
         border-top:1px solid #eee;
         background-color: #fff;
+        text-align: left !important;
         /* margin-top :26px !important; */
+    }
+
+    .myfix1 a {
+        margin-left : 25px !important;
     }
     
     .myfix2{
