@@ -1233,7 +1233,12 @@ a.dropdown-toggle-user .bi {
         background-color: #fff;
         height: calc(100vh - 55px);
     }
+
+    .open{
+        overflow: hidden !important;
+    }
     
+
     .open .btn-menu {
         color: #6993FF;
     }

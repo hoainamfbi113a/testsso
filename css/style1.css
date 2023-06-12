@@ -236,6 +236,18 @@ body {
         padding-bottom : 1rem !important;
     }
 
+    /* body {
+        overflow: hidden !important;
+    } */
+
+    /* to prevent auto hiding of the search bar */
+    body, html{
+        height: 100% !important;
+        position: fixed !important;
+        width: 100% !important;
+        overflow-y: scroll !important;
+    }
+
     .myfix1 {
         position:fixed;
         bottom:-18px;
@@ -256,9 +268,12 @@ body {
     .myfix3{
         position : fixed;
         bottom: 0;
+        left : 0px;
         height:100px;
         z-index: 100000;
-        width:991px;
+        margin: 0px !important;
+        padding : 0px !important;
+        width:100%;
         background-color: #000;
     }
 
