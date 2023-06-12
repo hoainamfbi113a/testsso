@@ -245,8 +245,21 @@ body {
         padding-bottom: 15px;
         padding-left:0px;
         border-top:1px solid #eee;
-
         background-color: #fff;
+        margin-top :26px !important;
+    }
+    
+    .myfix2{
+        margin-bottom:20px !important;
+    }
+
+    .myfix3{
+        position : fixed;
+        bottom: 0;
+        height:100px;
+        z-index: 100000;
+        width:991px;
+        background-color: #000;
     }
 
 
