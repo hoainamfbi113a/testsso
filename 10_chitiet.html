@@ -494,7 +494,7 @@
                                 <h5 class="modal-title my-title" id="passModalLabel">CẬP NHẬT MẬT KHẨU</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
+                                <div class="modal-body" style="padding:0px !important;">
                                     <form class="frm-general frm-login needs-validation" id="form-name" action="#" method="post" data-url-login-by-password="#">
                                         
                                         <label class="w-100 pt-3">
@@ -559,9 +559,9 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <form class="frm-general frm-login needs-validation" id="form-date" action="#" method="post" data-url-login-by-password="#">
+                                    <form class="frm-general frm-login needs-validation row" id="form-date" action="#" method="post" data-url-login-by-password="#">
                                         
-                                        <label class="w-100 pt-3 text-center">
+                                        <!-- <label class="w-100 pt-3 text-center">
                                             <div class="flatpickr input-group" id="birthday">
                                                 <input type="text" class="form-control flatpickr-input input-update active" name="birthday" readonly="readonly" value="02/01/1988" data-input="">
                                                 <span class="input-group-text" data-toggle="">
@@ -570,7 +570,33 @@
                                                     </svg>
                                                 </span>
                                             </div>
+                                        </label> -->
+
+                                        <label class="col-4 pt-3 text-center">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Ngày</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                              </select>
                                         </label>
+                                        <label class="col-4 pt-3 text-center">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Tháng</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                              </select>
+                                        </label>
+                                        <label class="col-4 pt-3 text-center">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Năm</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                              </select>
+                                        </label>
+                                        
                                         <div class="gap-2 text-center">
                                             <button type="button" class="btn btn-style-r my-3 fw-bolder">LƯU THAY ĐỔI</button>
                                           </div>
